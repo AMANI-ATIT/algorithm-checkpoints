@@ -1,0 +1,22 @@
+ALGORITHM algo
+VAR
+    S:STRING;
+    D:STRING:{"a","e","i","o","u"};
+    F:INTEGER:=0;
+    V:INTEGER:=0;
+    W:INTEGER:=0;
+    i:INTEGER:=0;
+    j:INTEGER:=0;
+BEGIN
+    read(A) 
+    while (A[i] !="."){
+    if (A[i] !=" ")
+    {F+=1}
+    else {W+=1};
+    for (j=0;j<6;j++){
+    if (A[i]=D[j]){V+=1}
+    };
+    i+=1
+    };
+    write (F,W,V);
+END
